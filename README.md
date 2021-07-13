@@ -20,7 +20,7 @@
 
 ## Check Deployment
 
-- Click on https://gagandeep39.github.io/drink-and-delight
+- Click on https://github.com/SantoshKudale1117/Inventory-Mangement
 
 ## `inventory-database-service`
 
