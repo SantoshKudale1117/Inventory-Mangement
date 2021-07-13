@@ -1,6 +1,11 @@
 server:
   port: 9000
 spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
   application:
     name: inventory-gateway-service
   profiles:
@@ -26,7 +31,7 @@ zuul:
     socket-timeout-millis: 60000
   # Sesitive Header required to be bloank to prevent cors error
   sensitiveHeaders:
-  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  # ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin  
   ribbon:
     eager-load:
       enabled: true
