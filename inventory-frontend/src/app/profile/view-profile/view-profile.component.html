@@ -9,8 +9,11 @@
         <div class="card shadow">
           <div class="card-header py-3">
             <div class="panel-heading row">
+             
               <h2 class="col panel-title display-4" style="text-align: left">
-                <b> {{ user?.firstName }} {{ user?.lastName }} </b>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                  <mat-icon>home</mat-icon>
+                </button> <b> {{ user?.firstName }} {{ user?.lastName }} </b>
               </h2>
         
               <div class="edit">

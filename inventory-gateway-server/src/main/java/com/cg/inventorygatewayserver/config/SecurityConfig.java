@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.csrf().disable())
 						.authorizeRequests()
 						.antMatchers(new String[] { "/inventory-auth-service/**", "/actuator/**", "/**/h2/**",
-								"/**/swagger*/**", "/**/v2/api-docs" ,"/*"})).permitAll()
+								"/**/swagger*/**", "/**/v2/api-docs"})).permitAll()
 										.antMatchers(new String[] { "/h2" })).permitAll().anyRequest()).authenticated()
 												.and()).sessionManagement()
 														.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and())
