@@ -32,15 +32,15 @@ public class SwaggerConfig {
 
   private ApiInfo apiInfo() {
     return new ApiInfoBuilder()
-      .title("Drink and Delight - Auth Service")
+      .title("Inventory-Mangement - Auth Service")
       .description("Perform Product Management operation such as purchase, update status")
       .license("Apache 2.0")
-      .licenseUrl("https://github.com/Santosh39/drink-and-delight")
+      .licenseUrl("https://github.com/SantoshKudale1117/Inventory-Mangement")
       .version("1.0")
       .contact(
         new Contact(
           "Santosh Kudale", 
-          "www.github.com/Santosh39", 
+          "www.github.com/SantoshKudale1117", 
           "Doesn't Exist")
       )
       .build();
