@@ -1,8 +1,8 @@
 {
   "name": "inventory-frontend",
   "version": "0.0.0",
-  "author": "Gagandeep Singh",
-  "homepage": "https://gagandeep39.github.io/inventory-frontend/",
+  "author": "Santosh Kudale",
+  "homepage": "https://github.com/SantoshKudale1117/Inventory-Mangement",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

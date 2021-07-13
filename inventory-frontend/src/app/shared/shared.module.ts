@@ -1,6 +1,6 @@
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-03 22:38:27
  * @modify date 2020-11-03 22:38:27
  * @desc Consists of modules shared across components

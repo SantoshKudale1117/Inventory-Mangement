@@ -1,8 +1,8 @@
 import { Warehouse } from './warehouse.model';
 
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-08 18:10:38
  * @modify date 2020-11-08 18:10:38
  * @desc [description]

@@ -1,6 +1,6 @@
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-04 22:21:02
  * @modify date 2020-11-04 22:21:02
  * @desc Request Question Component - Sends request to server

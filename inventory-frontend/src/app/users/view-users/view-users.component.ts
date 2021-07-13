@@ -1,6 +1,6 @@
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-05 02:27:43
  * @modify date 2020-11-05 02:27:43
  * @desc View all users

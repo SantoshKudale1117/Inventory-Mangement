@@ -1,6 +1,6 @@
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-08 18:35:38
  * @modify date 2020-11-08 18:35:38
  * @desc Manage Supplier related operation

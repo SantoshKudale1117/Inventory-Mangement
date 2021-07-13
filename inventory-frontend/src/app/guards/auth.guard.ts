@@ -1,6 +1,6 @@
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-04 07:53:53
  * @modify date 2020-11-04 07:53:53
  * @desc Auth guard ensures user is authenticated

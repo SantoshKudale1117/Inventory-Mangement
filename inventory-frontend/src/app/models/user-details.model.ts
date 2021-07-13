@@ -1,8 +1,8 @@
 import { Address } from './address.model';
 
 /**
- * @author Gagandeep Singh
- * @email singh.gagandeep3911@gmail.com
+ * @author Santosh Kudale
+ * @email santosh.kudale96@gmail.com
  * @create date 2020-11-05 00:41:17
  * @modify date 2020-11-05 00:41:17
  * @desc User detals model
