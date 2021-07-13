@@ -2,7 +2,7 @@ version: '3.8'
 services:
   inventory-gateway-server:
     container_name: inventory-gateway-server
-    image: gagandeep39/inventory-gateway-server
+    image: santoshkudale1117/inventory-gateway-server
     ports:
       - '9000:9000'
     environment:
@@ -21,7 +21,7 @@ services:
       - inventory-database-service
   inventory-discovery-server:
     container_name: inventory-discovery-server
-    image: gagandeep39/inventory-discovery-server
+    image: santoshkudale1117/inventory-discovery-server
     ports:
       - '8761:8761'
     environment:
@@ -29,7 +29,7 @@ services:
       - eureka.instance.lease-expiration-duration-in-seconds=90
   inventory-auth-service:
     # container_name: inventory-auth-service
-    image: gagandeep39/inventory-auth-service
+    image: santoshkudale1117/inventory-auth-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:h2:tcp://inventory-database-service:9550/~/test
       - SPRING_PROFILES_ACTIVE=dev
@@ -41,7 +41,7 @@ services:
       - inventory-database-service
   inventory-rawmaterial-order-service:
     # container_name: inventory-rawmaterial-order-service
-    image: gagandeep39/inventory-rawmaterial-order-service
+    image: santoshkudale1117/inventory-rawmaterial-order-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:h2:tcp://inventory-database-service:9550/~/test
       - SPRING_PROFILES_ACTIVE=dev
@@ -53,7 +53,7 @@ services:
       - inventory-database-service
   inventory-product-order-service:
     # container_name: inventory-product-order-service
-    image: gagandeep39/inventory-product-order-service
+    image: santoshkudale1117/inventory-product-order-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:h2:tcp://inventory-database-service:9550/~/test
       - SPRING_PROFILES_ACTIVE=dev
@@ -65,7 +65,7 @@ services:
       - inventory-database-service
   inventory-stock-management-service:
     # container_name: inventory-stock-management-service
-    image: gagandeep39/inventory-stock-management-service
+    image: santoshkudale1117/inventory-stock-management-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:h2:tcp://inventory-database-service:9550/~/test
       - SPRING_PROFILES_ACTIVE=dev
@@ -77,7 +77,7 @@ services:
       - inventory-database-service
   inventory-supplier-service:
     # container_name: inventory-supplier-service
-    image: gagandeep39/inventory-supplier-service
+    image: santoshkudale1117/inventory-supplier-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:h2:tcp://inventory-database-service:9550/~/test
       - SPRING_PROFILES_ACTIVE=dev
@@ -89,7 +89,7 @@ services:
       - inventory-database-service
   inventory-database-service:
     container_name: inventory-database-service
-    image: gagandeep39/inventory-database-service
+    image: santoshkudale1117/inventory-database-service
     restart: always
     depends_on:
       - inventory-discovery-server
