@@ -15,6 +15,7 @@ import { MaterialCustomModule } from '../material-custom/material-custom.module'
 import { ErrorDisplayComponent } from './error-display/error-display.component';
 import { UpdateStatusComponent } from './update-status/update-status.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -25,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotFoundComponent,
     ErrorDisplayComponent,
     UpdateStatusComponent,
+    HeaderComponent,
   ],
   imports: [
     ReactiveFormsModule,
@@ -35,7 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports: [
     FooterComponent,
     NavigationComponent,
-    MaterialCustomModule
+    MaterialCustomModule,
+    HeaderComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

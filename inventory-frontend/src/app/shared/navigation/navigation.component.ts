@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {  Component, OnInit, Output, EventEmitter,HostListener, ElementRef} from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user.model';
 import { AuthService } from 'src/app/services/auth.service';
@@ -61,8 +61,10 @@ export class NavigationComponent implements OnInit {
     },
   ];
 
-  constructor(private authService: AuthService, private router: Router) {}
 
+  constructor(private authService: AuthService, private router: Router) {}
+  @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
+ public el:ElementRef= null;
   ngOnInit(): void {
     if (this.authService.fetchFromSessionStorage() !== null)
       this.user = this.authService.fetchFromSessionStorage();
@@ -74,4 +76,39 @@ export class NavigationComponent implements OnInit {
   signOut() {
     this.authService.logout();
   }
+
+
+  isMenuSmall:boolean = true;
+  sideBarOpen: boolean = false;
+ 
+
+ // Your initial click listener on the host element
+ @HostListener('click', ['$event'])onClick(event) {
+      event.stopPropagation();
+   if (event.target.id == "collapseBtn") {
+      document.getElementsByClassName('sidebar')[0].classList.add('showsidebar');
+      document.body.classList.add('push');
+      this.sideBarOpen = true;
+   } else {
+    if (this.sideBarOpen) {
+       document.getElementsByClassName('sidebar')[0].classList.remove('showsidebar');
+       document.body.classList.remove('push');
+       this.sideBarOpen = false;
+    }
+   }
+ }
+
+  // Click listener on the window object to handle clicks anywhere on 
+  // the screen.
+  @HostListener('window:click', ['$event']) onOutsideClick(event){
+    if(this.sideBarOpen && !this.el.nativeElement.contains(event.target)){
+      this.sideBarOpen=false;
+      document.getElementsByClassName('sidebar')[0].classList.remove('showsidebar');
+      document.body.classList.remove('push');
+    }
+  }
+  toggleSideBar() {
+   
+ }
+  
 }

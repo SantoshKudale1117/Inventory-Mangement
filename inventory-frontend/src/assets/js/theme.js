@@ -38,12 +38,22 @@
   });
 
   // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function(e) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1000, 'easeInOutExpo');
-    e.preventDefault();
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  var sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  var el = document.getElementById('overlayBtn');
+
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
   });
+  
+  
 
 })(jQuery); // End of use strict
